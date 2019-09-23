@@ -1,0 +1,13 @@
+<h1 style="font-size: 90px">{{count}}</h1>
+<span style="font-size: 90px">{{title}}</span>
+<p *ngIf="count>10">Hello World</p><br>
+<button (click)="incrementCount()">Increment Count</button>
+<button (click)="decrementCount()">Decrement Count</button><br>
+<label for="TwoWayBinding">Binding</label>
+<input
+      type="text"
+      name="myTextBox"
+      id="TwoWayBinding"
+      [(ngModel)]="boundName"
+>
+<p>{{boundName}}</p>
